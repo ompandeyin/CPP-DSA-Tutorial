@@ -56,7 +56,7 @@
 //         }
 
 
-
+//Note:   Listen with this way it seem diffcult ok so in the place of freq => count and in the place of ans use candiacte
 
 //         int count =0;                        //use only no ans
 //         for(int val : nums){
@@ -68,10 +68,33 @@
 //         if(count > n/2) => ans
 //         else => -1                           // ----
 
-
-
-
 //         return ans;
 //     }
 
 // };
+
+
+
+//------------------easy way------------
+
+
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int count = 0;
+        int candidate = 0;
+
+        for(int num : nums){
+            if(count == 0){
+                candidate = num;
+            }
+            if(candidate == num){
+                count++;
+            }else{
+                count--;
+            }
+        }
+        return candidate;
+        
+    }
+};
