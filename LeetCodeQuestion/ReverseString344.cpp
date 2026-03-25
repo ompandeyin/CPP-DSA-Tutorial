@@ -1,9 +1,12 @@
-#include<iostream>
-#include<cstring>
-using namespace std;
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int st = 0, end = s.size()-1;
 
-
-
-int main(){
-
-}
+        while(st < end){
+            swap(s[st], s[end]);
+            st++;
+            end--;
+        }
+    }
+};
