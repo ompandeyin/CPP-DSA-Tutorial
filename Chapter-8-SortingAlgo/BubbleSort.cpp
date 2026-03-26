@@ -4,7 +4,7 @@ using namespace std;
 
 void bubbleSort(int arr[], int n ){   //O(n^2)
     for(int i=0; i<n; i++){
-        bool isSwap = false;
+        bool isSwap = false;   //reset
 
         for(int j =0; j<n-i-1; j++){
             if(arr[j] > arr[j+1]){
