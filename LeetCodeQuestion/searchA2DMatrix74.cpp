@@ -1,4 +1,4 @@
- class Solution {
+class Solution {
 public:
 
     bool searchInRow(vector<vector<int>>& mat, int target, int row){
